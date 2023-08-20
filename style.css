@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+      min-height: 100vh;
+      background-color: #f9fafe;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  main {
+    background-color: white;
+    margin:10px 50px;
+    border-radius: 10px;
+    width: 50%;
+  }
+  .head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .head span {
+    background-color: #0e3b7f;
+    color: white;
+    padding: 2px 8px 2px 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  .btn {
+    cursor: pointer;
+  }
+.head p {
+    color: #586588;
+    font-weight: bold;
+}
+.notification {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.notf {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f0f3f8;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.notf .info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.notf img {
+    width: 50px;
+}
+b {
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+b.chess {
+    color: #4067aa;
+    font-weight: bold;
+}
+
+.unread p:first-of-type::after{
+    content: "";
+    width: 10px;
+    border-radius:50%;
+    height: 10px;
+    background-color: hsl(1, 90%, 64%);
+    display: inline-block;
+    margin-left: 10px;
+}
+.read {
+    background-color: white;
+}
+span {
+  color: hsl(219, 12%, 42%);
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.text{
+  margin-bottom: 70px;
+}
+.textarea {
+  outline: 1px solid hsl(219, 12%, 42%);
+  padding: 15px;
+  margin: 10px;
+  color: hsl(219, 12%, 42%);
+}
+@media(max-width:400px){
+  main {
+    width: 100%;
+    margin:5px 5px;
+  }
+  .head {
+padding: 10px;
+  }
+  .notification {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .notf {
+    padding: 10px;
+  }
+}
